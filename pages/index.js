@@ -3,6 +3,7 @@ import Browser from 'components/svg/Browser';
 import Mobile from 'components/svg/Mobile';
 import TopBar from 'components/TopBar';
 import Gem from 'components/svg/Gem';
+import ContactUs from 'components/ContactUs';
 import styles from './index.module.scss';
 
 export default function Home() {
@@ -74,6 +75,10 @@ export default function Home() {
             It provides IT services, IT consulting, software development, and web design.
           </div>
         </div>
+      </div>
+
+      <div className={styles.footer}>
+        <ContactUs label="Say Hello" />
       </div>
     </div>
   );

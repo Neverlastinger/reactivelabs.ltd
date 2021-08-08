@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import cn from 'classnames';
 import { useScroll } from 'hooks';
-import Bar from 'components/svg/Bar';
+import ContactUs from 'components/ContactUs';
 
 const STICKY_THRESHOLD = 90;
 
@@ -9,7 +9,6 @@ const STICKY_THRESHOLD = 90;
  * Represents the application top bar.
  */
 const TopBar = () => {
-  const [isMobileMenuContentOpen, setIsMobileMenuContentOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
   useScroll((offset) => {
@@ -19,14 +18,6 @@ const TopBar = () => {
         : offset > 0
     ));
   });
-
-  const openMobileMenuContent = () => {
-    setIsMobileMenuContentOpen(true);
-  };
-
-  // const closeMobileMenuContent = () => {
-  //   setIsMobileMenuContentOpen(false);
-  // };
 
   return (
     <>
@@ -40,20 +31,8 @@ const TopBar = () => {
           </div>
 
           <div className="menu">
-            &nbsp;
+            <ContactUs />
           </div>
-
-          <button type="button" className="mobile-menu-icon" onClick={openMobileMenuContent}>
-            <div className="mobile-menu-icon-wrapper">
-              <Bar />
-            </div>
-          </button>
-
-          {isMobileMenuContentOpen && (
-            <>
-              mobile menu content
-            </>
-          )}
         </div>
       </div>
     </>

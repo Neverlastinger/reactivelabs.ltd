@@ -84,6 +84,10 @@ $mobile-width: 1080px;
       display: flex;
       align-items: center;
 
+      @media (max-width: 430px) {
+        display: none;
+      }
+
       ul.menu-link-list {
         li {
           display: inline-block;
@@ -114,26 +118,6 @@ $mobile-width: 1080px;
 
     .wrapper {
       height: $top-bar-mobile-height;
-
-      .menu {
-        display: none;
-      }
-
-      .mobile-menu-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 4px;
-        right: 12px;
-        width: 48px;
-        height: 48px;
-        cursor: pointer;
-
-        .mobile-menu-icon-wrapper {
-          width: 36px;
-        }
-      }
     }
   }
 }
