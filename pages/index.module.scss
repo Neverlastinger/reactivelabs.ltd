@@ -34,6 +34,7 @@
 
     .title {
       display: inline-block;
+      position: relative;
       margin-top: 200px;
       margin-bottom: 90px;
       font-size: 70px;
@@ -45,6 +46,18 @@
       -webkit-text-fill-color: transparent;
       background-image: linear-gradient(145deg, #f81f02, #ee076f);
       text-shadow: transparent 0px 0px 0px; // Safari
+      animation: appear 0.8s;
+
+      @keyframes appear {
+        from {
+          opacity: 0.01;
+          top: 30px;
+        }
+        to {
+          opacity: 1;
+          top: 0px;
+        }
+      }
 
       @media (max-width: 1310px) {
         margin-top: 180px;
@@ -64,6 +77,7 @@
       @media (max-width: 570px) {
         margin-top: 80px;
         font-size: 6vw;
+        line-height: 40px;
       }
 
       span {
@@ -80,9 +94,25 @@
         }
 
         li {
+          position: relative;
           flex: 1;
           padding: 0 15px;
           margin-bottom: 60px;
+          animation: slideIn 1.6s forwards;
+          opacity: 0.01;
+
+          @media (max-width: 1080px) {
+            animation: none;
+            opacity: 1;
+          }
+
+          &:nth-child(2) {
+            animation-delay: 1.2s;
+          }
+
+          &:nth-child(3) {
+            animation-delay: 2.4s;
+          }
 
           .icon {
             height: 75px;
@@ -101,6 +131,17 @@
             color: white;
             font-size: 24px;
             font-weight: 400;
+          }
+
+          @keyframes slideIn {
+            from {
+              opacity: 0.01;
+              left: 30px;
+            }
+            to {
+              opacity: 1;
+              left: 0px;
+            }
           }
         }
       }
