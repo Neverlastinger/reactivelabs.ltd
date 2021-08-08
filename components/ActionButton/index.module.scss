@@ -13,6 +13,12 @@
   outline: none;
   transition: all .3s;
 
+  &.large {
+    padding: 0 48px;
+    height: 69px;
+    font-size: 24px;
+  }
+
   &:hover {
     top: -2px;
     border-color: #f81f02;

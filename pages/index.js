@@ -61,24 +61,26 @@ export default function Home() {
       </div>
 
       <div className={styles.aboutSection}>
-        <div className={styles.image}>
-          <img src="screen.jpg" alt="" />
-        </div>
+        <div className={styles.aboutLayer}>
+          <div className={styles.image}>
+            <img src="screen.jpg" alt="" />
+          </div>
 
-        <div className={styles.mobileOverlay} />
+          <div className={styles.mobileOverlay} />
 
-        <div className={styles.aboutContent}>
-          <h2>About</h2>
+          <div className={styles.aboutContent}>
+            <h2>About</h2>
 
-          <div className={styles.description}>
-            Founded by a software developer with 12 years of experience, <strong>Reactive Labs Ltd</strong> is a legal entity registered in Bulgaria and operating worldwide.
-            It provides IT services, IT consulting, software development, and web design.
+            <div className={styles.description}>
+              Founded by a software developer with 12 years of experience, <strong>Reactive Labs Ltd</strong> is a legal entity registered in Bulgaria and operating worldwide.
+              It provides IT services, IT consulting, software development, and web design.
+            </div>
           </div>
         </div>
       </div>
 
       <div className={styles.footer}>
-        <ContactUs label="Say Hello" />
+        <ContactUs label="Say Hello" isLarge />
       </div>
     </div>
   );
