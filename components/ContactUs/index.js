@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 const HASH = '#contact-us';
 
-export default function ContactUs({ label, isLarge }) {
+export default function ContactUs({ label, isLarge, isWhite }) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleHashChange = useCallback(() => {
@@ -25,7 +25,11 @@ export default function ContactUs({ label, isLarge }) {
 
   return (
     <>
-      <ActionButton isLarge={isLarge} onClick={() => { window.location.hash = HASH; }}>
+      <ActionButton
+        isLarge={isLarge}
+        isWhite={isWhite}
+        onClick={() => { window.location.hash = HASH; }}
+      >
         {label || 'Get in Touch'}
       </ActionButton>
 

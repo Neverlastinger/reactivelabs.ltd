@@ -30,4 +30,15 @@
     box-shadow: #fec0b8 0px 0px 6px;
     transition: all 0s;
   }
+
+  &.white {
+    border-color: white;
+    color: white;
+
+    &:hover {
+      border-color: white;
+      background-color: white;
+      color: #f81f02;
+    }
+  }
 }

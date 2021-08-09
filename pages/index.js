@@ -3,7 +3,10 @@ import Browser from 'components/svg/Browser';
 import Mobile from 'components/svg/Mobile';
 import TopBar from 'components/TopBar';
 import Gem from 'components/svg/Gem';
+import Atom from 'components/svg/Atom';
 import ContactUs from 'components/ContactUs';
+import Server from 'components/svg/Nodejs';
+import Figma from 'components/svg/Figma';
 import styles from './index.module.scss';
 
 export default function Home() {
@@ -79,8 +82,69 @@ export default function Home() {
         </div>
       </div>
 
+      <div className={styles.technologiesSection}>
+        <div className={styles.titleWrapper}>
+          <h2>Technologies</h2>
+
+          <div className={styles.description}>
+            Focusing on long-term quality and maintainability.
+          </div>
+        </div>
+
+        <ul className={styles.techCards}>
+          <li>
+            <div className={styles.icon}>
+              <Atom />
+            </div>
+
+            <h3>React</h3>
+
+            <div className={styles.description}>
+              Using React, Redux, Redux-Saga, React-Query to create interactive single page applications.
+            </div>
+          </li>
+
+          <li>
+            <div className={styles.icon}>
+              <Server />
+            </div>
+
+            <h3>Node.js</h3>
+
+            <div className={styles.description}>
+              Using Node.js, Next.js or similar framework for Server-side development.
+            </div>
+          </li>
+
+          <li>
+            <div className={styles.icon}>
+              <Mobile />
+            </div>
+
+            <h3>React Native</h3>
+
+            <div className={styles.description}>
+              Using a cross-platform technology to publish iOS and Android apps from a single codebase.
+            </div>
+          </li>
+
+          <li>
+            <div className={styles.icon}>
+              <Figma />
+            </div>
+
+            <h3>Figma</h3>
+
+            <div className={styles.description}>
+              Using real-time collaboration tools to comunicate product requirements, interfaces, and UX.
+            </div>
+          </li>
+        </ul>
+      </div>
+
       <div className={styles.footer}>
-        <ContactUs label="Say Hello" isLarge />
+        <div className={styles.overlay} />
+        <ContactUs label="Say Hello" isLarge isWhite />
       </div>
     </div>
   );
