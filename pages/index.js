@@ -115,7 +115,7 @@ export default function Home() {
               <h3>Node.js</h3>
 
               <div className={styles.description}>
-                Using Node.js, Next.js or similar framework for Server-side development.
+                Using Node.js, Next.js or similar frameworks for Server-side development.
               </div>
             </li>
 
