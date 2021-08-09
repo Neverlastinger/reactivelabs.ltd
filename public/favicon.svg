@@ -8,8 +8,8 @@
           <defs>
             <linearGradient id="8a4de88b-7cee-4e28-9b1f-4ef3f0ceea21" x1="248.6" y1="493.56" x2="248.6"
               gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#f81f02"></stop>
-              <stop offset=".23" stop-color="#f81f02"></stop>
+              <stop offset="0" stop-color="#61dafb"></stop>
+              <stop offset=".23" stop-color="#61dafb"></stop>
               <stop offset=".47" stop-color="#61dafb"></stop>
               <stop offset="1" stop-color="#61dafb"></stop>
             </linearGradient>
