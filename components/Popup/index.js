@@ -1,23 +1,18 @@
-import React from 'react';
-import Dialog from '@material-ui/core/Dialog';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import {
+  Dialog,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+} from "@mui/material";
+import React from "react";
 
 export default function Popup({ isOpen, onClose, title, children }) {
   return (
-    <div style={{ backgroundColor: 'black' }}>
-      <Dialog
-        open={isOpen}
-        onClose={onClose}
-      >
-        {title && (
-          <DialogTitle>{title}</DialogTitle>
-        )}
+    <div style={{ backgroundColor: "black" }}>
+      <Dialog open={isOpen} onClose={onClose}>
+        {title && <DialogTitle>{title}</DialogTitle>}
         <DialogContent>
-          <DialogContentText>
-            {children}
-          </DialogContentText>
+          <DialogContentText>{children}</DialogContentText>
         </DialogContent>
       </Dialog>
     </div>
