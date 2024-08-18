@@ -78,7 +78,7 @@ export default function Home() {
             <h2>About</h2>
 
             <div className={styles.description}>
-              Founded by a software developer with 12 years of experience,{" "}
+              Founded by a software developer with 15 years of experience,{" "}
               <strong>Reactive Labs Ltd</strong> is a legal entity registered in
               Bulgaria and operating worldwide. It provides IT services, IT
               consulting, software, web, and mobile app development, and UX
