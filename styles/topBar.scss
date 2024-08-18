@@ -82,9 +82,24 @@ $mobile-width: 1080px;
     .menu {
       display: flex;
       align-items: center;
+      gap: 32px;
 
       @media (max-width: 430px) {
         display: none;
+      }
+
+      .link {
+        color: #b1b4c1;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: all 0.3s;
+
+        &:hover {
+          transform: translateY(-2px);
+          color: #f81f02;
+        }
       }
 
       ul.menu-link-list {

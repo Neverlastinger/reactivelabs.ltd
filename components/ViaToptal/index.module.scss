@@ -1,0 +1,18 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+  margin-left: 18px;
+  font-size: 14px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: -9px;
+    width: 3px;
+    height: 3px;
+    background-color: #c6c9d8;
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,48 @@
+.section {
+  margin-bottom: 30px;
+  padding-left: 18px;
+  border-left: 2px solid #c6c9d8;
+  transition: all 0.2s;
+
+  &:hover {
+    border-left-color: white;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  .collapseToggle {
+    cursor: pointer;
+  }
+
+  h2 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .collapsible {
+    list-style-type: disc;
+    margin-top: 30px;
+    padding-left: 24px;
+    overflow: hidden;
+    max-height: 1400px;
+    transition: all 0.2s;
+
+    &.collapsed {
+      max-height: 0px;
+      margin-top: 0px;
+    }
+
+    > li {
+      list-style-type: disc;
+      padding-left: 0px;
+      padding-bottom: 48px;
+
+      &:last-child {
+        padding-bottom: 6px;
+      }
+    }
+  }
+}
