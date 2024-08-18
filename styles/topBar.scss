@@ -134,4 +134,8 @@ $mobile-width: 1080px;
       height: $top-bar-mobile-height;
     }
   }
+
+  @media print {
+    display: none;
+  }
 }

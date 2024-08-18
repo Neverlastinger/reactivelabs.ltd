@@ -4,6 +4,10 @@
   margin-left: 18px;
   font-size: 14px;
 
+  @media print {
+    display: none;
+  }
+
   &::before {
     content: "";
     display: inline-block;
