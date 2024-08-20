@@ -123,7 +123,7 @@ export default function Resume() {
                 </div>
               </li>
 
-              <li>
+              {/* <li>
                 <div className={styles.itemHeader}>
                   Senior JavaScript Developer (US-Based AI Start-Up)
                   <ViaToptal />
@@ -147,7 +147,7 @@ export default function Resume() {
                     UI components while collaborating with the UX expert.
                   </div>
                 </div>
-              </li>
+              </li> */}
 
               <li>
                 <div className={styles.itemHeader}>
