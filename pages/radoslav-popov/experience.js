@@ -385,6 +385,29 @@ export default function Resume() {
             </>
           }
         />
+
+        <ToggableSection
+          head={<h2>Showcase Section</h2>}
+          body={
+            <>
+              <li style={{ paddingBottom: "16px" }}>
+                <div className={styles.itemHeader}>
+                  The 2048 Game, built with React & Redux
+                  <span className={styles.date}>2018</span>
+                  <div style={{ marginTop: "6px" }}>
+                    <a
+                      href="https://neverlastinger.github.io/2048-react-redux/build/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      https://neverlastinger.github.io/2048-react-redux/build/
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </>
+          }
+        />
       </div>
     </div>
   );
