@@ -405,6 +405,23 @@ export default function Resume() {
                   </div>
                 </div>
               </li>
+
+              <li style={{ paddingBottom: "16px" }}>
+                <div className={styles.itemHeader}>
+                  Switching from Front-End Web Development to React Native — Six
+                  Months in Highlights
+                  <span className={styles.date}>2019</span>
+                  <div style={{ marginTop: "6px" }}>
+                    <a
+                      href="https://medium.com/@radoslav.popov/switching-from-front-end-web-development-to-react-native-6-months-in-highlights-c78ccd14581a"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      https://medium.com/@radoslav.popov/switching-from-front-end-web-development-to-react-native-6-months-in-highlights-c78ccd14581a
+                    </a>
+                  </div>
+                </div>
+              </li>
             </>
           }
         />
