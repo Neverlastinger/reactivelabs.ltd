@@ -1,4 +1,7 @@
 .section {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  transition: grid-template-rows 500ms;
   margin-bottom: 30px;
   padding-left: 18px;
   border-left: 2px solid #c6c9d8;
@@ -32,11 +35,7 @@
     margin-top: 30px;
     padding-left: 24px;
     overflow: hidden;
-    transition: all 0.2s; // transitioning max-height
-
-    &.collapsed {
-      margin-top: 0px;
-    }
+    transition: all 0.2s;
 
     > li {
       list-style-type: disc;
@@ -50,6 +49,14 @@
       @media print {
         padding-bottom: 12px;
       }
+    }
+  }
+
+  &.collapsed {
+    grid-template-rows: min-content 0fr;
+
+    .collapsible {
+      margin-top: 0px;
     }
   }
 }
