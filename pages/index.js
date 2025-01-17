@@ -12,7 +12,7 @@ import styles from "./index.module.scss";
 export default function Home() {
   return (
     <div className={styles.wrapper}>
-      <HTMLHead title="Reactive Labs Ltd | Since 2021" />
+      <HTMLHead title="Reactive Labs Ltd | Since 2021 | by Radoslav Popov" />
 
       <TopBar />
 
